@@ -1,7 +1,6 @@
-
 'use client';
 
-import { IframeCards } from '@/app/ui/dashboard/iframe-cards';
+import { Apis } from '@/app/ui/dashboard/apis';
 import { Lusitana } from 'next/font/google';
 
 const lusitana = Lusitana({
@@ -13,14 +12,10 @@ export default function Page() {
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Dashboard - Cards
+        cards de apis
       </h1>
-
-      {/* Bloque 1: PokéAPI */}
-      <IframeCards />
-
-      {/* Aquí puedes agregar los demás bloques más adelante */}
-      {/* <OtherApiCards /> */}
+      {/*Apis*/}
+      <Apis />
     </main>
   );
 }
